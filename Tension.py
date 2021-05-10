@@ -31,12 +31,6 @@ def magnetComputeInduction(Xmagnet, Ymagnet, Zmagnet, Xcoil, Ycoil, triangles, X
 
         YmailleCoil = Ycoil[triangles]
 
-        #
-
-        # A MODIFIER ..... [begin]
-
-        #
-
         XCOGmagnet = (XmailleMagnet[:,0] + XmailleMagnet[:,1] + XmailleMagnet[:,2]) /3 + Xshift[j]
 
         YCOGmagnet = (YmailleMagnet[:,0] + YmailleMagnet[:,1] + YmailleMagnet[:,2]) / 3
@@ -67,11 +61,6 @@ def magnetComputeInduction(Xmagnet, Ymagnet, Zmagnet, Xcoil, Ycoil, triangles, X
 
         phi[j] = np.sum(PhiTriangle)
 
-        #
-
-        # A MODIFIER ..... [end]
-
-        #
 
     return phi
 
